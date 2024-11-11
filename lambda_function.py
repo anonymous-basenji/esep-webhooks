@@ -4,7 +4,7 @@ import requests
 
 def lambda_handler(event, context):
     # Deserialize input from json
-    json_data = json.loads(event)
+    json_data = event
 
     # Create payload with issue URL
     payload = { 
